@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.webp";
+import hero1 from "../assets/hero1.webp";
+import hero2 from "../assets/hero2.webp";
 
 const Herosection = () => {
-  const images = [image1, image2];
+  const images = [hero1, hero2];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -20,8 +20,9 @@ const Herosection = () => {
       <img
         src={images[currentIndex]}
         alt="product"
-        className="w-full mt-20 object-contain"
+        className="w-full object-contain"
       />
+    
     </div>
   );
 };
