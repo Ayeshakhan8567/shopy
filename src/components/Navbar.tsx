@@ -4,15 +4,16 @@ import { User } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
+    
   return (
     <>
-    <div className="bg-transparent flex gap-4 flex-col w-full fixed z-20  ">
+    <div className="bg-transparent flex gap-4  flex-col w-full fixed z-20  ">
 
     <div className=" px-5 flex justify-between  w-full bg-transparent" >
         {/*upper part of navbar*/}
         <div className="flex justify-center items-center gap-5 bg-transparent mt-4 ">
             {/*Menu icon*/}
-            <div className="alige-center pt-2" > 
+            <div className="align-center pt-2" > 
                  <Menu className="text-white align-center" size={50} />
             </div>
             {/*brandName*/}
@@ -41,20 +42,6 @@ const Navbar = () => {
      <a className="text-xl" href="#">Women</a>
      <a className="text-xl" href="#">Fragrances</a>
      </div>
-
-     {/*3rd div for the line*/}
-
-    <div className="flex flex-col  justify-center items-center gap-5 bg-transparent text-white text-lg font-semibold ml-6 mt-50">
-
-        <div className="text-4xl" >Fall Winter '26</div>
-        <div className="text-4xl animate-pulse" >Live Now</div>
-
-        <div className="flex justify-center items-center gap-5 bg-transparent text-white text-lg font-semibold ml-6 mt-2">
-        <a className="text-2xl" href="#">Unstitched</a>
-        <a className="text-2xl" href="#">Ready to Wear</a>
-        </div>
-
-    </div>
 
 
 

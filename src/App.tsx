@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar.tsx";
-import Mainsection from "./components/Herosection.tsx";
+import Herosection from "./components/Herosection.tsx";
+import NewinSection from "./components/NewinSection.tsx";
 function App() {
 
   return (
     <>
       <Navbar />
-       <Mainsection/>
+       <Herosection/>
+       < NewinSection/>
     </>
      
   )
