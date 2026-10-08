@@ -1,13 +1,18 @@
 import Navbar from "./components/Navbar.tsx";
 import Herosection from "./components/Herosection.tsx";
 import NewinSection from "./components/NewinSection.tsx";
+import ThirdSection from "./components/ThirdSection.tsx";
+import FourthSection from "./components/FourthSection.tsx";
+
 function App() {
 
   return (
     <>
-      <Navbar />
+       <Navbar />
        <Herosection/>
-       < NewinSection/>
+       <NewinSection/>
+       <ThirdSection />
+       <FourthSection />
     </>
      
   )
