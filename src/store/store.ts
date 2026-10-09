@@ -14,10 +14,11 @@ const useStore = create<Store>((set) => ({
   currentIndex2: 0,
   currentIndex3: 0,
 
-  handleFirstSlideshow: () =>
+  handleFirstSlideshow: () =>{
     set((state) => ({
       currentIndex: (state.currentIndex + 1) % 2,
-    })),
+    }))
+  },
 
   handleSecondSlideshow: () => {
     set((state) => {

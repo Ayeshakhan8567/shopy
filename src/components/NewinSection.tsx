@@ -19,7 +19,6 @@ const NewinSection = () => {
     modest_wear
   ];
 
- ;
 
   // Automatic slide
   useEffect(() => {
@@ -68,7 +67,7 @@ const NewinSection = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="w-[calc(33.33%-11px)] flex-shrink-0"
+              className="w-[300px] flex-shrink-0"
             >
               <img
                 src={image}

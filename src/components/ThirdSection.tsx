@@ -16,7 +16,7 @@ const ThirdSection = () => {
     }, 3000);  
 
     return () => clearInterval(interval); 
-  }, [handleThirdSlideshow]); 
+  }, []); 
 
   return ( 
     <section className="w-full min-h-[900px] flex items-center bg-gray-100 overflow-hidden"> 

@@ -3,6 +3,7 @@ import Herosection from "./components/Herosection.tsx";
 import NewinSection from "./components/NewinSection.tsx";
 import ThirdSection from "./components/ThirdSection.tsx";
 import FourthSection from "./components/FourthSection.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
        <NewinSection/>
        <ThirdSection />
        <FourthSection />
+       <Footer/>
     </>
      
   )
