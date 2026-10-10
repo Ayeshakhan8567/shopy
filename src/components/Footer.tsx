@@ -7,6 +7,7 @@ import {
   CreditCard,
 } from "lucide-react";
 
+{/*Footer*/}
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-[#111827]">
