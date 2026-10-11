@@ -10,7 +10,7 @@ const NewinSection = () => {
 
  const currentIndex2 = useStore((state) => state.currentIndex2);
  const handleSecondSlideshow = useStore((state) => state.handleSecondSlideshow);
-
+{/*images*/}
   const images = [
     matching_separates,
     styled_by_sahr,
