@@ -6,6 +6,7 @@ import modest_wear from "../assets/modest_wear.webp";
 import sweaters_d from "../assets/sweaters_d.webp";
 import useStore from "../store/store";
 
+{/*New In Section*/}
 const NewinSection = () => {
 
  const currentIndex2 = useStore((state) => state.currentIndex2);
