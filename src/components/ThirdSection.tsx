@@ -53,16 +53,16 @@ const ThirdSection = () => {
         <p className="text-sm tracking-widest text-gray-500"> 
           750+ ITEMS 
         </p> 
-
+{/* NEW IN TITLE */}
         <h1 className="text-5xl font-bold mt-3"> 
           NEW IN 
         </h1> 
-
+{/* DESCRIPTION */}
         <p className="text-gray-600 mt-5 leading-7"> 
           Discover our latest collection and find something 
           perfect for your style. 
         </p> 
-
+         {/* SHOP NOW BUTTON */}
         <button className="mt-6 bg-black text-white px-6 py-3 hover:bg-gray-800 transition"> 
           <a href="#" className="no-underline"> 
             SHOP NOW 
