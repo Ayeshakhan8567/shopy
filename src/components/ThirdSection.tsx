@@ -4,6 +4,7 @@ import unstitch from '../assets/unstitch.webp'
 import readyToWear from '../assets/readyToWear.webp' 
 import modest_wear from '../assets/modest_wear.webp' 
  
+{/*third section*/} 
 const ThirdSection = () => { 
   const images = [unstitch, readyToWear, modest_wear]; 
 
