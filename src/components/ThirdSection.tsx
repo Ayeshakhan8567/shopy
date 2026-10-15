@@ -32,6 +32,7 @@ const ThirdSection = () => {
             transform: `translateY(-${currentIndex3 * 100}%)`, 
           }} 
         > 
+        {/* IMAGE SLIDES */}
           {images.map((imgSrc, index) => ( 
             <div 
               key={index} 
