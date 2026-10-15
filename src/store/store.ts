@@ -8,7 +8,7 @@ type Store = {
   handleSecondSlideshow: () => void;
   handleThirdSlideshow: () => void;
 };
-
+{/* Zustand store for managing slideshow state */}
 const useStore = create<Store>((set) => ({
   currentIndex: 0,
   currentIndex2: 0,
