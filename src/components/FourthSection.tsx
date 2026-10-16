@@ -2,6 +2,7 @@ import React from 'react'
 import Embroidered_elegance from '../assets/Embroidered_elegance.webp'
 import Regal_reds from '../assets/Regal_reds.webp'
 
+{/*fourth section*/}
 const FourthSection = () => {
   return (
     <section className="w-full min-h-[500px] flex bg-gray-100 overflow-hidden">
