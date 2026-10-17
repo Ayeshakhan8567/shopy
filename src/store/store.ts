@@ -4,15 +4,19 @@ type Store = {
   currentIndex: number;
   currentIndex2: number;
   currentIndex3: number;
+  showSidebar: boolean;
   handleFirstSlideshow: () => void;
   handleSecondSlideshow: () => void;
   handleThirdSlideshow: () => void;
+  toggleSidebar: () => void;
 };
+
 {/*store for managing slideshow state */}
 const useStore = create<Store>((set) => ({
   currentIndex: 0,
   currentIndex2: 0,
   currentIndex3: 0,
+  showSidebar: false,
 
 
   handleFirstSlideshow: () =>{
@@ -40,6 +44,11 @@ const useStore = create<Store>((set) => ({
       return { currentIndex3: state.currentIndex3 + 1 };
     });
   },
+  toggleSidebar: () => {
+    set((state) => ({
+      showSidebar: !state.showSidebar,
+    }));
+  }
 }));
 
 export default useStore;

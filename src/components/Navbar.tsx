@@ -2,9 +2,11 @@ import { Menu } from "lucide-react";
 import { Search } from "lucide-react";
 import { User } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
+import { Link } from "react-router-dom";
+import useStore from "../store/store";
 
 const Navbar = () => {
-    
+    const toggleSidebar = useStore(state => state.toggleSidebar);
   return (
     <>
     <div className="bg-transparent flex gap-4  flex-col w-full fixed z-20  ">
@@ -14,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-center items-center gap-5 bg-transparent mt-4 ">
             {/*Menu icon*/}
             <div className="align-center pt-2" > 
-                 <Menu className="text-white align-center" size={50} />
+                 <Menu className="text-white align-center" size={50} onClick={toggleSidebar} />
             </div>
             {/*brandName*/}
             <div className="text-6xl font-bold text-white align-center">SAPPHIRE</div>
@@ -39,8 +41,8 @@ const Navbar = () => {
      {/*lower part of navbar*/}
 
      <div className="flex gap-5 bg-transparent text-white text-lg font-semibold ml-6">
-     <a className="text-xl" href="#">Women</a>
-     <a className="text-xl" href="#">Fragrances</a>
+     <Link to="/">Women</Link>
+     <Link to= "/Pages/Fragrances">Fragrances</Link>
      </div>
 
 

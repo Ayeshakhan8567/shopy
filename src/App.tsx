@@ -1,20 +1,44 @@
 import Navbar from "./components/Navbar.tsx";
-import Herosection from "./components/Herosection.tsx";
-import NewinSection from "./components/NewinSection.tsx";
-import ThirdSection from "./components/ThirdSection.tsx";
-import FourthSection from "./components/FourthSection.tsx";
+import Sidebar from "./components/Sidebar.tsx";
 import Footer from "./components/Footer.tsx";
+import Home from "./Pages/Home.tsx";
+import ReadyToWear from "./Pages/ReadyToWear.tsx";
+import Newin from "./Pages/Newin.tsx";
+import Unstitch from "./Pages/Unstitch.tsx";
+import { Routes, Route } from "react-router-dom";
+
 
 function App() {
 
   return (
     <>
        <Navbar />
-       <Herosection/>
-       <NewinSection/>
-       <ThirdSection />
-       <FourthSection />
+       <Home/>
+       <Sidebar/>
+         <Routes>
+
+        <Route path="/" 
+        element={<Home/>} />
+
+        <Route
+          path="/ready-to-wear"
+          element={<ReadyToWear />}
+        />
+        
+        <Route
+          path="/new-in"
+          element={<Newin />}
+        />
+        
+        <Route
+          path="/unstitch"
+          element={<Unstitch />}
+        />
+
+
+    </Routes>
        <Footer/>
+
     </>
      
   )
