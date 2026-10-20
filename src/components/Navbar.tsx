@@ -4,7 +4,7 @@ import { User } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import useStore from "../store/store";
-
+{/*navbar*/}
 const Navbar = () => {
     const toggleSidebar = useStore(state => state.toggleSidebar);
   return (
